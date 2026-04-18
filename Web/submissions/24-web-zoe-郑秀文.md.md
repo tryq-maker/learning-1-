@@ -1,27 +1,35 @@
 # web学习
 ## 安装工具
 ### 1.Hackbar 安装   
-参考博客 [harkbar教程](https://github.com/HCTYMFF/hackbar2.1.3)  
-直接在Google扩展中安装
+**参考博客** [harkbar教程](https://github.com/HCTYMFF/hackbar2.1.3)  
+**直接在Google扩展中安装**  
 ![harkbar安装](https://cdn.jsdelivr.net/gh/zoe3971/my_images@main/harkbar1.png)  
-![harkbar](https://cdn.jsdelivr.net/gh/zoe3971/my_images@main/harkbar2.png)  
+![harkbar](https://cdn.jsdelivr.net/gh/zoe3971/my_images@main/harkbar2.png)
 ### 2.Burp suite安装  
-破解Burp suite  ![Burp suite](https://cdn.jsdelivr.net/gh/zoe3971/my_images@main/破解打开burpsuite.png)  
-CA证书  ![ca](https://cdn.jsdelivr.net/gh/zoe3971/my_images@main/burp-ca.png)
-
+**破解Burp suite**  
+![Burp suite](https://cdn.jsdelivr.net/gh/zoe3971/my_images@main/破解打开burpsuite.png)  
+**CA证书**  
+![ca](https://cdn.jsdelivr.net/gh/zoe3971/my_images@main/burp-ca.png)  
 ### 3.dirsearch  
-参考博客[dirsearch的安装(非常详细)和使用](https://blog.csdn.net/m0_73185293/article/details/131239309?sharetype=blog&shareId=131239309&sharerefer=APP&sharesource=2401_88034999&sharefrom=link)  
-先配置python3  ![配置python3](https://cdn.jsdelivr.net/gh/zoe3971/my_images@main/配置python3.png) 
-下载dirsearch-master.zip文件  ![dirsearch安装](https://cdn.jsdelivr.net/gh/zoe3971/my_images@main/dirsearch压缩包.png)  
-运行dirsearch  ![dirsearch](https://cdn.jsdelivr.net/gh/zoe3971/my_images@main/dirsearch.png)  
+**参考博客**[dirsearch的安装(非常详细)和使用](https://blog.csdn.net/m0_73185293/article/details/131239309?sharetype=blog&shareId=131239309&sharerefer=APP&sharesource=2401_88034999&sharefrom=link)  
+**先配置python3**  
+![配置python3](https://cdn.jsdelivr.net/gh/zoe3971/my_images@main/配置python3.png)   
+**下载dirsearch-master.zip文件**  
+![dirsearch安装](https://cdn.jsdelivr.net/gh/zoe3971/my_images@main/dirsearch压缩包.png)  
+**运行dirsearch**  
+![dirsearch](https://cdn.jsdelivr.net/gh/zoe3971/my_images@main/dirsearch.png)  
+***
 ## Writeup
 ### 第一题
 [题目来源](https://www.nssctf.cn/problem/382)  
-打开靶机，F12查看源代码，即可找到隐藏在网站源码中的FLAG  ![第一题](https://cdn.jsdelivr.net/gh/zoe3971/my_images@main/第一题.png)  
+打开靶机，F12查看源代码，即可找到隐藏在网站源码中的FLAG  
+![第一题](https://cdn.jsdelivr.net/gh/zoe3971/my_images@main/第一题.png)  
 ### 第二题
 [题目来源](https://www.qsnctf.com/#/main/driving-range?page=1&category=&difficulty=&keyword=robots.txt)  
-访问https://域名+端口/robots.txt 得到3个文件名  ![文件名](https://cdn.jsdelivr.net/gh/zoe3971/my_images@main/文件名.png) 
-访问secret.php，得到账号密码  ![账号密码](https://cdn.jsdelivr.net/gh/zoe3971/my_images@main/账号密码.png) 
+访问https://域名+端口/robots.txt 得到3个文件名  
+![文件名](https://cdn.jsdelivr.net/gh/zoe3971/my_images@main/文件名.png).  
+访问secret.php，得到账号密码  
+![账号密码](https://cdn.jsdelivr.net/gh/zoe3971/my_images@main/账号密码.png)   
 用得到的账户密码登入拿到flag  
 ![flag](https://cdn.jsdelivr.net/gh/zoe3971/my_images@main/flag.png)  
 ![已攻克](https://cdn.jsdelivr.net/gh/zoe3971/my_images@main/已攻克.png)
@@ -31,20 +39,19 @@ CA证书  ![ca](https://cdn.jsdelivr.net/gh/zoe3971/my_images@main/burp-ca.png)
 ![地址](https://cdn.jsdelivr.net/gh/zoe3971/my_images@main/地址.png)  
 访问node5.anna.nssctf.cn:21384地址，得到php  
 ![php](https://cdn.jsdelivr.net/gh/zoe3971/my_images@main/php.png)  
-这段代码的意思是：  
-php文件里面定义了flag变量，接收一个名为moe的GET参数，如果moe的值等于"flag"，就会输出$flag  
-拿到flag
+这段代码的意思是：php文件里面定义了flag变量，接收一个名为moe的GET参数，如果moe的值等于"flag"，就会输出$flag  
+拿到flag  
 ![1](https://cdn.jsdelivr.net/gh/zoe3971/my_images@main/1.png)  
+***
 ## Linux  
 ### 搭建过程
-安装VMware虚拟机  
+**安装VMware虚拟机**  
 参考博客[vmware](https://blog.csdn.net/xuewzj888/article/details/157842709?spm=1001.2101.3001.6650.4&utm_medium=distribute.pc_relevant.none-task-blog-2~default~YuanLiJiHua~Position-4-157842709-blog-145380408.235%5Ev43%5Epc_blog_bottom_relevance_base2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~YuanLiJiHua~Position-4-157842709-blog-145380408.235%5Ev43%5Epc_blog_bottom_relevance_base2&utm_relevant_index=7)  
 ![VMware](https://cdn.jsdelivr.net/gh/zoe3971/my_images@main/vmware.png)  
-在vmware上安装Ubuntu系统  
+**在VMware上安装Ubuntu系统**  
 参考博客[Ubuntu](https://cloud.tencent.com/developer/article/2417995)
 ![ubuntu](https://cdn.jsdelivr.net/gh/zoe3971/my_images@main/ubuntu.png)  
-![hh](https://cdn.jsdelivr.net/gh/zoe3971/my_images@main/hh.png)
-
+![hh](https://cdn.jsdelivr.net/gh/zoe3971/my_images@main/hh.png)  
 ### 学习笔记
   Linux 是一套免费使用和自由传播的类 Unix 操作系统，是一个基于 POSIX 和 UNIX 的多用户、多任务、支持多线程和多 CPU 的操作系统。  
   Linux 能运行主要的 UNIX 工具软件、应用程序和网络协议。它支持 32 位和 64 位硬件。Linux 继承了 Unix 以网络为核心的设计思想，是一个性能稳定的多用户网络操作系统。
